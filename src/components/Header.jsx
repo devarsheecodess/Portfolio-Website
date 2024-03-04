@@ -2,6 +2,10 @@ import React from 'react';
 import './Header.css'
 
 function Header(){
+    function Resume(){
+        alert("The resume is currently not available!")
+    }
+
     return(
         <div className='header'>
             <div className="header-items-left">
@@ -13,7 +17,7 @@ function Header(){
                     <li>About me</li>
                     <li>Projects</li>
                     <li>Contact</li>
-                    <button><i class="fa-solid fa-file-arrow-down"></i>Resume</button>
+                    <button onClick={Resume}><i class="fa-solid fa-file-arrow-down"></i>Resume</button>
                 </ul>
             </div>
         </div>

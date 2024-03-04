@@ -1,30 +1,92 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Typed from 'typed.js';
 import './Home.css';
-import image from './assets/home-image.png';
+import image from './assets/home image.png';
+import almeida from './assets/almeida.jpeg';
+import GVMS from './assets/GVMS.jpeg';
+import GEC from './assets/GEC.jpg';
 
-function Home(){
-    return(
+function Home() {
+    useEffect(() => {
+        var typed = new Typed('#element', {
+            strings: ['Frontend Developer', 'Web Developer' , '2nd year student', 'Currently learning Fullstack Development'],
+            typeSpeed: 70,
+            cursorChar: '',
+        });
+    }, []);
+    
+
+    return (
         <div className='Home'>
             <div className="home-text-upper">
                 <div className="home-heading">
                     <h1>Hi, I am <p>Devarshee Gaunekar</p></h1>
-                    <h5>A Frontend Developer</h5>
+                    <div className="text">
+                        <h5><span id="element"></span></h5>
+                    </div>
                 </div>
                 <div className="header-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illo aperiam maiores placeat saepe magni amet cum voluptate sapiente magnam reprehenderit hic ea quod laudantium, voluptatibus reiciendis quisquam? Vero facilis amet, sed aut dignissimos molestiae explicabo incidunt. Nihil alias doloremque nisi, saepe ab, asperiores enim eos id repellendus maiores nulla eius hic pariatur perferendis natus corporis, sit assumenda! A est unde voluptatum temporibus dolor soluta earum beatae vitae pariatur veniam! Blanditiis eius beatae commodi deserunt, incidunt quae quibusdam in eos voluptas fuga fugiat accusantium suscipit at molestiae voluptatibus mollitia quas inventore quis labore facilis autem voluptate odio consectetur sapiente. Voluptas.
+                    <p>2nd-year student at Goa College Of Engineering
+Passionate about crafting innovative solutions in frontend development. 
+Currently i am learning Fullstack Web Development
+Enthusiastic about tech exploration, hackathons, and collaborative projects. 
+Committed to making a positive impact through coding. 
+Let's create something extraordinary together!
                     </p>
                 </div>
             </div>
             <div className="home-img">
-                <img src={image}></img>
+                <img src={image} alt="Home"></img>
             </div>
-            <div class="custom-shape-divider-bottom-1709497579">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
+        </div>
+    );
+}
+
+function Education(){
+    return(
+        <div className="education">
+            <h3>Education</h3>
+            <span>
+                <div className="sections">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div className="education-boxes">
+                    <span>
+                        <div className="education-boxes-text">
+                            <h1>A.J.De Almeida High school</h1>
+                            <h6>2016 - 2020</h6>
+                        </div>
+                        <img src={almeida}></img>
+                    </span>
+                    <span>
+                        <div className="education-boxes-text">
+                            <h1>GVMS SNJA Higher Secondary</h1>
+                            <h6>2020 - 2022</h6>
+                        </div>
+                        <img src={GVMS}></img>
+                    </span>
+                    <span>
+                        <div className="education-boxes-text">
+                            <h1>Goa Engineering College</h1>
+                            <h6>2022 - Present</h6>
+                        </div>
+                        <img src={GEC}></img>
+                    </span>
+                </div>
+            </span>
         </div>
     )
 }
 
-export default Home;
+function LoadHome(){
+    return(
+        <>
+            <Home />
+            <Education />
+        </>
+    )
+}
+
+export default LoadHome;
