@@ -5,6 +5,13 @@ import image from './assets/home image.png';
 import almeida from './assets/almeida.jpeg';
 import GVMS from './assets/GVMS.jpeg';
 import GEC from './assets/GEC.jpg';
+import tailwind from './assets/tailwind-css-icon.png';
+import express from './assets/express-js-icon.png';
+import SQL from './assets/mysql-icon.png';
+import mongo from './assets/mongodb-icon.png';
+import vscode from './assets/vscode-icon.png';
+import c from './assets/c.png';
+import cpp from './assets/c++.png';
 
 function Home() {
     useEffect(() => {
@@ -14,7 +21,6 @@ function Home() {
             cursorChar: '',
         });
     }, []);
-    
 
     return (
         <div className='Home'>
@@ -80,11 +86,121 @@ function Education(){
     )
 }
 
+function Skills(){
+    return(
+        <div className="skills">
+            <h3>Skills</h3>
+            <div className="frontend">
+                <h2>Frontend</h2>
+                <div className="logos">
+                    <span>
+                        <i class="fa-brands fa-html5"></i>
+                        <h4>HTML</h4>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h4>CSS</h4>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-square-js"></i>
+                        <h4>JavaScript</h4>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-react"></i>
+                        <h4>React JS</h4>
+                    </span>
+                    <span>
+                        <img src={tailwind}></img>
+                        <h4>Tailwind CSS</h4>
+                    </span>
+                </div>
+            </div>
+            <div className="backend">
+                <h2>Backend</h2>
+                <div className="logos">
+                    <span>
+                        <i class="fa-brands fa-node-js"></i>
+                        <h4>Node JS</h4>
+                    </span>
+                    <span>
+                        <img src={express}></img>
+                        <h4>Express JS</h4>
+                    </span>
+                    <span>
+                        <img src={SQL}></img>
+                        <h4>My SQL</h4>
+                    </span>
+                    <span>
+                        <img src={mongo}></img>
+                        <h4>Mongo DB</h4>
+                    </span>
+                </div>
+            </div>
+            <div className="languages">
+                <h2>Programming languages</h2>
+                <div className="logos">
+                    <span>
+                        <img src={c}></img>
+                        <h4>C</h4>
+                    </span>
+                    <span>
+                        <img src={cpp}></img>
+                        <h4>C++</h4>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-java"></i>
+                        <h4>Java</h4>
+                    </span>
+                </div>
+            </div>
+            <div className="tools">
+                <h2>Tools</h2>
+                <div className="logos">
+                    <span>
+                        <i class="fa-brands fa-git-alt"></i>
+                        <h4>Git</h4>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-github"></i>
+                        <h4>Github</h4>
+                    </span>
+                    <span>
+                        <img src={vscode} id='vscode'></img>
+                        <h4>VS Code</h4>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-figma"></i>
+                        <h4>Figma</h4>
+                    </span>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function Projects(){
+    return(
+        <div className="projects">
+            <h3>Projects</h3>
+            <div className="showcase">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    )
+}
+
 function LoadHome(){
     return(
         <>
             <Home />
             <Education />
+            <Skills />
+            <Projects />
         </>
     )
 }

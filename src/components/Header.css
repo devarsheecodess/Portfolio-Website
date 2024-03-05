@@ -9,9 +9,13 @@
 .header{
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 70px;
     background-color: #0B1120;
     justify-content: space-between;
+}
+
+.header-items-right, .header-items-left{
+    margin-top: 10px; 
 }
 
 .header h1{
