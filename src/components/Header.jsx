@@ -1,9 +1,19 @@
 import React from 'react';
 import './Header.css'
+import { animateScroll as scroll } from 'react-scroll';
+import AboutMe from './AboutMe.jsx';
 
 function Header(){
     function Resume(){
         alert("The resume is currently not available!")
+    }
+
+    function scrollToProjects() {
+        scroll.scrollTo(2330);
+    }
+
+    function Home(){
+        
     }
 
     return(
@@ -14,8 +24,8 @@ function Header(){
             <div className="header-items-right">
                 <ul>
                     <button>Home</button>
-                    <button>About me</button>
-                    <button>Projects</button>
+                    <button >About me</button>
+                    <button onClick={scrollToProjects}>Projects</button>
                     <button>Contact</button>
                     <button onClick={Resume} id='resume'><i class="fa-solid fa-file-arrow-down"></i>Resume</button>
                     <i class="fa-solid fa-bars"></i>

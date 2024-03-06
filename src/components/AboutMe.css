@@ -11,12 +11,12 @@ body{
     margin-top: 60px;
     margin-bottom: 160px;
     font-size: 25px;
-    color: white;
+    color: #0EA5E9;
     flex-direction: row;
     align-items: flex-start;
 }
 
-.Home h1{
+.home-heading h1{
     color: #0EA5E9;
     display: flex;
     font-size: 35px;

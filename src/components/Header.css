@@ -40,10 +40,6 @@
 }
 
 .header-items-right button:hover{
-    display: flex;
-    list-style: none;
-    padding: 15px;
-    color: white;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 3px;
