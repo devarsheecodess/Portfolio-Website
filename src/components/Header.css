@@ -84,9 +84,17 @@
     text-decoration: none;
 }
 
-.fa-file-arrow-down{
+.fa-file-arrow-down {
     font-size: 20px;
     margin-right: 10px;
+}
+
+.fa-bars{
+    font-size: 20px;
+    color: white;
+    align-self: center;
+    display: none;
+    margin-right: -30px;
 }
 
 .header {
@@ -94,7 +102,7 @@
 }
 
 @media only screen and (max-width: 959px){
-    .header-items-right{
+    .header-items-right button, #resume{
         display: none;
     }
 
@@ -105,5 +113,9 @@
 
     .header{
         background-color: #060b17;
+    }
+
+    .fa-bars{
+        display: block;
     }
 }

@@ -18,6 +18,7 @@ function Header(){
                     <button>Projects</button>
                     <button>Contact</button>
                     <button onClick={Resume} id='resume'><i class="fa-solid fa-file-arrow-down"></i>Resume</button>
+                    <i class="fa-solid fa-bars"></i>
                 </ul>
             </div>
         </div>
