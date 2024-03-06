@@ -29,21 +29,24 @@
     margin-right: 60px;
 }
 
-.header-items-right li{
+.header-items-right button{
     display: flex;
     list-style: none;
     padding: 15px;
     color: white;
     cursor: pointer;
+    font-weight: 600;
+    background-color: transparent;
 }
 
-.header-items-right li:hover{
+.header-items-right button:hover{
     display: flex;
     list-style: none;
     padding: 15px;
     color: white;
     text-decoration: underline;
     text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
 }
 
 .header-items-right button{
@@ -59,10 +62,26 @@
     cursor: pointer;
 }
 
-.header-items-right button:hover{
+#resume{
+        display: flex;
+        height: 56px;
+        width: 124px;
+        margin-left: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#resume:hover{
     background-color: #E85173;
     color: white;
     transition-duration: 0.15s;
+    text-decoration: none;
 }
 
 .fa-file-arrow-down{
@@ -70,12 +89,11 @@
     margin-right: 10px;
 }
 
-/* Add some margin below the header to push the curve down */
 .header {
-    margin-bottom: 50px; /* Adjust this value as needed */
+    margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 959px){
     .header-items-right{
         display: none;
     }

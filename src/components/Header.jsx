@@ -13,11 +13,11 @@ function Header(){
             </div>
             <div className="header-items-right">
                 <ul>
-                    <li>Home</li>
-                    <li>About me</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                    <button onClick={Resume}><i class="fa-solid fa-file-arrow-down"></i>Resume</button>
+                    <button>Home</button>
+                    <button>About me</button>
+                    <button>Projects</button>
+                    <button>Contact</button>
+                    <button onClick={Resume} id='resume'><i class="fa-solid fa-file-arrow-down"></i>Resume</button>
                 </ul>
             </div>
         </div>
