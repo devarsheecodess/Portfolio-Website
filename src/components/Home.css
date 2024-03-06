@@ -43,6 +43,13 @@ body{
     margin-left: 9px;
 }
 
+.name {
+    text-shadow: 1px 1px 14px #0EA5E9;
+}
+
+.hi{
+    text-shadow: none;
+}
 
 h5{
     font-size: 20px;

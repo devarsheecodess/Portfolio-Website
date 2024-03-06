@@ -91,6 +91,10 @@ h5{
     margin-top: 10px;
 }
 
+.home-heading h1 {
+    text-shadow: 1px 1px 14px #0EA5E9;
+}
+
 @media only screen and (max-width: 959px){
     .Home{
         display: flex;
