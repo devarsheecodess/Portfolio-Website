@@ -21,16 +21,28 @@ body{
     align-items: flex-start;
 }
 
-.Home h1 p{
+
+.home-heading h1{
+    display: flex;
+    font-size: 35px;
+    color: white;
+}
+
+.home-heading h1 p{
     margin-left: 13px;
     color: #0EA5E9;
     font-size: 35px;
 }
 
-.Home h1{
-    display: flex;
-    font-size: 35px;
+.home-heading .hi {
+    color: white;
 }
+
+.home-heading .name {
+    color: #0EA5E9;
+    margin-left: 9px;
+}
+
 
 h5{
     font-size: 20px;
@@ -59,6 +71,10 @@ h5{
     margin-top: 10px;
     font-size: 20px;
     color: #AAAAAA;
+}
+
+h3 {
+    text-shadow: 1px 1px 14px #E85173;
 }
 
 /* Education Section  */

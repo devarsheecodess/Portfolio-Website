@@ -25,12 +25,12 @@ function Home() {
     return (
         <div className='Home'>
             <div className="home-text-upper">
-                <div className="home-heading">
-                    <h1>Hi, I am <p>Devarshee Gaunekar</p></h1>
-                    <div className="text">
-                        <h5><span id="element"></span></h5>
-                    </div>
-                </div>
+            <div className="home-heading">
+        <h1><span class="hi">Hi, I am </span><span class="name">Devarshee Gaunekar</span></h1>
+        <div className="text">
+        <h5><span id="element"></span></h5>
+        </div>
+        </div>
                 <div className="header-text">
                     <p>2nd-year student at Goa College Of Engineering
 Passionate about crafting innovative solutions in frontend development. 
@@ -89,7 +89,7 @@ function Education(){
 function Skills(){
     return(
         <div className="skills">
-            <h3>Skills</h3>
+            <h3 className='.pink-text'>Skills</h3>
             <div className="frontend">
                 <h2>Frontend</h2>
                 <div className="logos">
