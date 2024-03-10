@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css'
 import { animateScroll as scroll } from 'react-scroll';
 import AboutMe from './AboutMe.jsx';
+import { NavLink } from 'react-router-dom';
 
 function Header(){
     function Resume(){
@@ -12,10 +13,6 @@ function Header(){
         scroll.scrollTo(2330);
     }
 
-    function Home(){
-        
-    }
-
     return(
         <div className='header'>
             <div className="header-items-left">
@@ -23,12 +20,11 @@ function Header(){
             </div>
             <div className="header-items-right">
                 <ul>
-                    <button>Home</button>
-                    <button >About me</button>
-                    <button onClick={scrollToProjects}>Projects</button>
-                    <button>Contact</button>
+                    <a><NavLink className={(e)=>{return e.isActive?"underline": "nav" }} to="/"><li>Home</li></NavLink></a>
+                    <a><NavLink className={(e)=>{return e.isActive?"underline": "nav" }} to="/about"><li>About Me</li></NavLink></a>
+                    <a onClick={scrollToProjects}>Projects</a>
+                    <a><NavLink className={(e)=>{return e.isActive?"underline": "nav" }} to="/contact"><li>Contact</li></NavLink></a>
                     <button onClick={Resume} id='resume'><i class="fa-solid fa-file-arrow-down"></i>Resume</button>
-                    <i class="fa-solid fa-bars"></i>
                 </ul>
             </div>
         </div>

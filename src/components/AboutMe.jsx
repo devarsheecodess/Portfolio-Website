@@ -4,7 +4,7 @@ import aboutImg from './assets/aboutPic.png';
 
 function AboutMe(){
     return(
-        <div className='about'>
+        <div className='about fade-in'>
             <div className='Home'>
             <div className="home-text-upper">
                 <div className="home-heading">
