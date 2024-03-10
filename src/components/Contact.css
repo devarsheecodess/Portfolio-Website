@@ -1,0 +1,201 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: -20px;
+}
+
+.banner img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.contact-contents {
+  display: flex;
+  margin-left: 60px;
+  margin-right: 60px;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.name {
+  display: flex;
+}
+
+.contact-form {
+  display: flex;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 350px;
+}
+
+.contact-text h1 {
+  color: #e85173;
+  margin-bottom: 10px;
+}
+
+.contact-text p {
+  color: white;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .form {
+    max-width: 80%; /* Reduce maximum width for medium-sized screens */
+    margin: auto; /* Center the form horizontally */
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .form {
+    padding: 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .contact-text h1 {
+    color: #e85173;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .contact-text p {
+    color: white;
+    font-size: 13px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.338);
+  margin-bottom: 60px;
+  padding: 20px; /* Padding for all screen sizes */
+  width: 100%; /* Full width for all screen sizes */
+  max-width: 500px; /* Maximum width for larger screens */
+  border-radius: 10px;
+}
+
+.form input,
+textarea {
+  margin: 20px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.504);
+  background-color: rgba(255, 255, 255, 0.333);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: black;
+  font-size: 12px;
+}
+
+#message {
+  height: 150px;
+}
+
+.form button {
+  width: 300px;
+  padding: 10px;
+  align-self: center;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  margin: 20px;
+  background-image: linear-gradient(#b356c1, #9734a6);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 979px) {
+  .banner {
+    margin-top: -50px;
+  }
+
+  .name {
+    flex-direction: column;
+  }
+
+  .form input:nth-child(1),
+  .form input:nth-child(2) {
+    width: 88%;
+  }
+
+  .contact-contents {
+    display: flex;
+    margin: auto; /* Center the contact-contents div horizontally */
+    flex-direction: column;
+    max-width: 800px; /* Adjust the max-width as per your design */
+    gap: 30px;
+  }
+
+  .contact-text h1 {
+    text-align: center;
+  }
+
+  .contact-text p {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 517px) {
+  .form {
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 403px) {
+  .contact-text h1 {
+    text-align: center;
+  }
+
+  .contact-text {
+    width: 220px;
+    align-self: center;
+  }
+
+  .contact-text p {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .form {
+    align-self: center;
+    margin-left: 30px;
+    padding: 20px; /* Padding for all screen sizes */
+    width: 250px; /* Full width for all screen sizes */
+  }
+
+  .form input,
+  textarea {
+    margin: 20px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.504);
+    background-color: rgba(255, 255, 255, 0.333);
+    outline: none;
+  }
+
+  .form button {
+    width: 150px;
+  }
+
+  .contact-form {
+    margin-left: -20px;
+  }
+}

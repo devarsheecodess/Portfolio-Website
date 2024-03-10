@@ -40,13 +40,14 @@
   height: 56px;
   color: white;
   width: 130px;
-  margin-left: 10px;
+  margin-right: 10px;
   justify-content: center;
   align-items: center;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid transparent;
   cursor: pointer;
+  list-style: none;
 }
 
 .underline {
@@ -81,27 +82,33 @@
   text-decoration: none;
 }
 
-.fa-file-arrow-down {
-  font-size: 20px;
-  margin-right: 10px;
-}
-
 .fa-bars {
   font-size: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
   align-self: center;
   display: none;
-  margin-right: -30px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
 
 .header {
   margin-bottom: 50px;
 }
 
+.fa-file-arrow-down{
+  font-size: 20px;
+  margin-right: 10px;
+}
+
 @media only screen and (max-width: 979px) {
   .header-items-right a,
   #resume {
     display: none;
+  }
+
+  .fa-bars, #toggle{
+    display: block;
   }
 
   .header h1 {

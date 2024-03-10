@@ -25,6 +25,7 @@ function Header(){
                     <a onClick={scrollToProjects}>Projects</a>
                     <a><NavLink className={(e)=>{return e.isActive?"underline": "nav" }} to="/contact"><li>Contact</li></NavLink></a>
                     <button onClick={Resume} id='resume'><i class="fa-solid fa-file-arrow-down"></i>Resume</button>
+                    <i className="fa-solid fa-bars"></i>
                 </ul>
             </div>
         </div>
