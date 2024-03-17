@@ -12,6 +12,7 @@ import mongo from "./assets/mongodb-icon.png";
 import vscode from "./assets/vscode-icon.png";
 import c from "./assets/c.png";
 import cpp from "./assets/c++.png";
+import Netlify from './assets/netlify.png';
 
 function Home() {
   useEffect(() => {
@@ -160,6 +161,10 @@ function Skills() {
             <i class="fa-brands fa-java"></i>
             <h4>Java</h4>
           </span>
+          <span>
+            <i class="fa-brands fa-square-js"></i>
+            <h4>JavaScript</h4>
+          </span>
         </div>
       </div>
       <div className="tools">
@@ -180,6 +185,10 @@ function Skills() {
           <span>
             <i class="fa-brands fa-figma"></i>
             <h4>Figma</h4>
+          </span>
+          <span>
+            <img src={Netlify} id="netlify"></img>
+            <h4>Netlify</h4>
           </span>
         </div>
       </div>
@@ -213,7 +222,5 @@ function LoadHome() {
     </>
   );
 }
-
-
 
 export default LoadHome;

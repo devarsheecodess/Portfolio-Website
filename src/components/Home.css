@@ -116,6 +116,9 @@ h3 {
 .logos {
   display: flex; gap: 30px; margin-left: 60px; margin-bottom: 20px; flex-wrap: wrap;
 }
+#netlify{
+  height: 45px; width: 45px;  margin-bottom: 0.2px;
+}
 .logos span {
   height: 80px; width: 80px; background-color: rgb(116, 170, 218); border-radius: 10px; display: flex; 
   align-items: center; justify-content: center; flex-direction: column;
